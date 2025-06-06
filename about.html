@@ -21,6 +21,27 @@
         color: #00ff00;
         /* Optional: adds green highlight on hover */
     }
+
+    .replaced {
+        position: relative;
+    }
+
+    .replaced .container1 {
+        position: absolute;
+        width: 100%;
+    }
+
+    .replaced .container2 {
+        position: absolute;
+        top: 300px;
+        text-align: start;
+        height: 400px;
+        margin-left: 100px;
+
+    }
+    .container3{
+        height: 300px;
+    }
 </style>
 
 <body>
@@ -53,19 +74,56 @@
         </div>
     </nav>
 
-    <div class="position-relative">
-        <div class="container1 position-absolute w-100"
+    <div class="position-relative replaced">
+        <div class="container1"
             style="height: 500px; background-color:#008D48;  display: flex; justify-content: center; align-items: center;">
             <p style="color: white; margin: 0;" class="fw-bold fs-3">A digital land registry service provider leveraging
                 on blockchain technology</p>
         </div>
-        <div class="container bg-light position-absolute top-100 start-50 translate-middle rounded-4">
-            <p style="color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor voluptatum non dolorem sint atque illum
-                pariatur incidunt, repellat laudantium nam sunt sequi suscipit voluptates nemo, recusandae temporibus!
-                Officiis, est quis.</p>
+        <div class="container2 bg-secondary rounded-4 container ">
+            <h2 style="text-align: center;" class="fw-bold">About Atlas</h2>
+            <p>Atlas is a Kenyan property technology company leveraging on blockchain technology
+                to digitize and safeguard land records through secure, tamper-proof digital archives
+            </p>
+            <p>Atlas has a tripple mission: to <strong>secure property rights</strong> of bina fide land owners by
+                preserving the integrity of critical land documents,
+                to promote a seamless <strong>access to land records,</strong> and to <strong>deepen due
+                    diligence</strong> rigour in Kenya
+            </p>
+            <p>
+                By proactively using technology, Atlas aims to restore trust in Kenya's real estate market - a sector
+                long plaqued by opacity and fraud
+            </p>
+            <p>Atlas platform leverages the decentralization and immutabillity (tamper-proof nature) of blockchain to
+                offer a more secure and accessible
+                future for land ownership verification in Kenya and beyond.
+
+            </p>
+            <p>As a proptech, Atlas is effectively an electronic land registry which is anchored in law under Land
+                Redistration Act & Land Act 2012.</p>
+
+            <hr>
+
+            <ul>
+                <li>Real estate is one of the most opaque and analogue sectors in the world.
+                    It is especially worse in developing countries like Kenya with endemic
+                    corruption which makes it easier to forge title documents and disposses bona fide owners off their
+                    hard-earned assets
+
+                </li>
+                <li>Atlas is keen to incorporate technology into this space for better service delivery</li>
+
+            </ul>
 
         </div>
 
+    </div>
+
+    <div class="container3" style=" color: black; background-color: #00ff00; height: 300px;">
+        <p>Atlas is a technology startup that is actively exploring ways to use blockchain technology to ensure data
+            integrity. Our current area of focus is on the use of blockchain technology to secure the integrity of land
+            records in Kenya. To this end, Atlas been building a blockchain powered platform that seeks to help property
+            owners to digitize and secure their property records on the blockchain.</p>
     </div>
 
 
