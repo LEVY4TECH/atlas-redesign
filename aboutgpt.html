@@ -22,6 +22,20 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
+        .navbar {
+            background-color: black;
+        }
+
+        .navbar a {
+            color: black;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #00ff00;
+            /* Optional: adds green highlight on hover */
+        }
+
         .hero {
             background: #008D48;
             color: white;
@@ -95,6 +109,35 @@
 </head>
 
 <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container-fluid">
+            <ul>
+                <a class="navbar-brand fw-bold text-success" href="#">Atlas</a>
+                <span class="fw-bold">Blockchain Solutions</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </ul>
+            <ul>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/aboutgpt.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Properties</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+            </ul>
+            <ul>
+                <button class="btn btn-success ms-3 rounded-pill">Get Started</button>
+        </div>
+        </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
